@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Delete Course</h1>
+    </div>
+    <div class="container">
+        <form method="post" action="deleteCourseServlet">
+            <label for="course_id">Course ID:</label><br>
+            <input type="text" id="course_id" name="course_id"><br>
+            <label for="name">Course Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="teacher">Teacher:</label><br>
+            <input type="text" id="teacher" name="teacher"><br>
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+</body>
+</html>
